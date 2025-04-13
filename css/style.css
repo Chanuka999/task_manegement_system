@@ -66,12 +66,26 @@
 .side-bar ul li:hover {
   background: #127b8e;
 }
+
 .side-bar ul li a {
   text-decoration: none;
   color: #eee;
   cursor: pointer;
   letter-spacing: 1px;
 }
+
+.side-bar .active a {
+  color: #127b8e !important;
+}
+
+.side-bar .active a i {
+  color: #127b8e !important;
+}
+
+.side-bar ul .active:hover {
+  background: transparent;
+}
+
 .side-bar ul li a i {
   display: inline-block;
   padding-right: 10px;
@@ -106,4 +120,31 @@
 .login-body form {
   max-width: 420px;
   width: 90%;
+}
+.section-1 {
+  padding: 30px;
+}
+
+.section-1 .title {
+  margin-bottom: 10px;
+}
+
+.section-1 .title a {
+  display: inline block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border: none;
+  background: #00cf22;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background 1s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-1 .title a:hover {
+  opacity: 0.6;
 }
