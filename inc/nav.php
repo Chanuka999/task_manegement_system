@@ -1,7 +1,14 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <nav class="side-bar">
         <div class="user-p">
           <img src="img/user.png" />
-          <h4>@user</h4>
+          <h4>
+            @<?php echo $_SESSION['username']; ?>
+        </h4>
         </div>
       
 <?php
@@ -36,7 +43,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="logout.php">
               <i class="fa fa-sign-out" aria-hidden="true"></i>
               <span>Logout</span>
             </a>
@@ -47,39 +54,39 @@
         } else{
            ?>
        <!--admin-->
-         <ul>
+         <ul id="navList">
           <li>
             <a href="#">
               <i class="fa fa-tachometer" aria-hidden="true"></i>
               <span>Dashboard</span>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li >
+            <a href="user.php">
               <i class="fa fa-users" aria-hidden="true"></i>
               <span>Manege users</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="create_task.php">
               <i class="fa fa-plus" aria-hidden="true"></i>
               <span>Create tasks</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="tasks.php">
               <i class="fa fa-tasks" aria-hidden="true"></i>
               <span>All tasks</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="notifications.php">
               <i class="fa fa-bell" aria-hidden="true"></i>
-              <span>Notification</span>
+              <span>Notifications</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="logout.php">
               <i class="fa fa-sign-out" aria-hidden="true"></i>
               <span>Logout</span>
             </a>
