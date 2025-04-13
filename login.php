@@ -26,9 +26,9 @@
     </div>
       <?php  } 
       
-      $pass = 123;
-      $pass = password_hash($pass,PASSWORD_DEFAULT);
-      echo $pass;
+      // $pass = 123;
+      // $pass = password_hash($pass,PASSWORD_DEFAULT);
+      // echo $pass;
       
       ?>
    
