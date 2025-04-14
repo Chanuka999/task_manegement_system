@@ -13,7 +13,7 @@
     <h3 class="display-4">LOGIN</h3>
     <?php if(isset($_GET['error'])){
       ?>
-         <div class="alert alert-danger" role="alert">
+         <div class="danger" role="alert">
       <?php echo stripslashes($_GET['error']);  ?>
     </div>
       <?php  } ?>
@@ -21,14 +21,11 @@
 
       <?php if(isset($_GET['success'])){
       ?>
-         <div class="alert alert-success" role="alert">
+         <div class="success" role="alert">
       <?php echo stripslashes($_GET['success']);  ?>
     </div>
       <?php  } 
       
-      // $pass = 123;
-      // $pass = password_hash($pass,PASSWORD_DEFAULT);
-      // echo $pass;
       
       ?>
    
